@@ -390,6 +390,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AmareScripts/DeadRail
 local Button = DeadRailsTab:CreateButton({
    Name = "Dead Rails Script #1",
    Callback = function()
-   print ("soon")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/Dead-Rails-SpiderXHub-Script/refs/heads/main/SpiderXHub%202.0.txt"))()
    end,
 })
+
