@@ -304,3 +304,27 @@ local Button = ChatBypassTab:CreateButton({
         print ("sorry abt the bug tho")
    end,
 })
+
+local AnimationsTab = Window:CreateTab("Animations (R6)", nil) -- Title, Image
+local AnimationsSection = AnimationsTab:CreateSection("FOR R6")
+
+local Button = AnimationsTab:CreateButton({
+   Name = "320+ Animations Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ExploitFin/AquaMatrix/refs/heads/AquaMatrix/AquaMatrix"))()
+   end,
+})
+
+local Button = AnimationsTab:CreateButton({
+   Name = "Pendulum Hub (not sure if r6 or r15)",
+   Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+   end,
+})
+
+local Button = AnimationsTab:CreateButton({
+   Name = "Universal Anims (not sure if r6 or r15)",
+   Callback = function()
+   loadstring(game:HttpGet"https://raw.githubusercontent.com/WinterDinder/oldfehub/main/boronide%20level%20obfuscation%20lol")()
+   end,
+})
