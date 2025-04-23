@@ -328,3 +328,68 @@ local Button = AnimationsTab:CreateButton({
    loadstring(game:HttpGet"https://raw.githubusercontent.com/WinterDinder/oldfehub/main/boronide%20level%20obfuscation%20lol")()
    end,
 })
+
+local MurderMystery2Tab = Window:CreateTab("Murder Mystery 2", nil) -- Title, Image
+local MurderMystery2Section = MurderMystery2Tab:CreateSection("For MM2! (Buggy)")
+
+local Button = MurderMystery2Tab:CreateButton({
+   Name = "Foggy Hub",
+   Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/mm2-piano-reborn/refs/heads/main/scr"))()
+   end,
+})
+
+local Button = MurderMystery2Tab:CreateButton({
+   Name = "YHub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/YHUB-Community/refs/heads/main/Murder-Mystery2"))()
+   end,
+})
+
+local Button = MurderMyster2Tab:CreateButton({
+   Name = "Vertex Hub",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()
+   end,
+})
+
+local DressToImpressTab = Window:CreateTab("Dress To Impress", nil) -- Title, Image
+local DressToImpressSection = DressToImpressTab:CreateSection("Dress To Impress")
+
+local Button = DressToImpressTab:CreateButton({
+   Name = "Dress To Impress Script #1",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua",true))()
+   end,
+})
+
+local Button = DressToImpressTab:CreateButton({
+   Name = "Dress To Impress Script #2 (Money Autofarm Not Tested)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/DressToImpress"))()
+   end,
+})
+
+local Button = DressToImpressTab:CreateButton({
+   Name = "Dress To Impress Script #3 (Not Tested)",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DeNyima/TarikHUB/refs/heads/main/DressToImpress'))()
+   end,
+})
+
+local DeadRailsTab = Window:CreateTab("Dead Rails", nil) -- Title, Image
+local DeadRailsSection = DeadRailsTab:CreateSection("Dead Rails Scripts!")
+
+local Button = DeadRailsTab:CreateButton({
+   Name = "Dead Rails Anticheat Bypass (VERY IMPORTANT)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AmareScripts/DeadRails/refs/heads/main/Bypass%25AntiCheat.lua"))()
+   end,
+})
+
+local Button = DeadRailsTab:CreateButton({
+   Name = "Dead Rails Script #1",
+   Callback = function()
+   print ("soon")
+   end,
+})
