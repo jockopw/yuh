@@ -315,20 +315,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ExploitFin/AquaMatrix
    end,
 })
 
-local Button = AnimationsTab:CreateButton({
-   Name = "Pendulum Hub (not sure if r6 or r15)",
-   Callback = function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
-   end,
-})
-
-local Button = AnimationsTab:CreateButton({
-   Name = "Universal Anims (not sure if r6 or r15)",
-   Callback = function()
-   loadstring(game:HttpGet"https://raw.githubusercontent.com/WinterDinder/oldfehub/main/boronide%20level%20obfuscation%20lol")()
-   end,
-})
-
 local MurderMystery2Tab = Window:CreateTab("Murder Mystery 2", nil) -- Title, Image
 local MurderMystery2Section = MurderMystery2Tab:CreateSection("For MM2! (Buggy)")
 
@@ -346,7 +332,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Luarmor123/YHUB-Commu
    end,
 })
 
-local Button = MurderMyster2Tab:CreateButton({
+local Button = MurderMystery2Tab:CreateButton({
    Name = "Vertex Hub",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()
@@ -360,20 +346,6 @@ local Button = DressToImpressTab:CreateButton({
    Name = "Dress To Impress Script #1",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua",true))()
-   end,
-})
-
-local Button = DressToImpressTab:CreateButton({
-   Name = "Dress To Impress Script #2 (Money Autofarm Not Tested)",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/DressToImpress"))()
-   end,
-})
-
-local Button = DressToImpressTab:CreateButton({
-   Name = "Dress To Impress Script #3 (Not Tested)",
-   Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/DeNyima/TarikHUB/refs/heads/main/DressToImpress'))()
    end,
 })
 
