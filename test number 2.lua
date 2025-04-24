@@ -315,6 +315,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ExploitFin/AquaMatrix
    end,
 })
 
+local AnimationTab = Window:CreateTab("Animation (R15)", nil) -- Title, Image
+local AnimationSection = AnimationTab:CreateSection("FOR R15")
+
+local Button = AnimationTab:CreateButton({
+   Name = "Walk Animations/Other Stuff",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BeemTZy/Motiona/refs/heads/main/source.lua"))()
+   end,
+})
+
 local MurderMystery2Tab = Window:CreateTab("Murder Mystery 2", nil) -- Title, Image
 local MurderMystery2Section = MurderMystery2Tab:CreateSection("For MM2! (Buggy)")
 
