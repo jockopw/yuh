@@ -284,6 +284,16 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ttwizz/Open-Aimbot/re
    end,
 })
 
+local UniversalHitboxExpanderTab = Window:CreateTab("Universal Hitbox Expander", nil) -- Title, Image
+local UniversalHitboxExpanderSection = UniversalHitboxExpanderTab:CreateSection("May Not Work In All Games")
+
+local Button = UniversalHitboxExpanderTab:CreateButton({
+   Name = "Hitbox Expander #1",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+   end,
+})
+
 local ChatBypassTab = Window:CreateTab("Chat Bypasses (Use At Your Own Risk)", nil) -- Title, Image
 local ChatBypassSection = ChatBypassTab:CreateSection("Chat Bypasses (Very Bannable)")
 
