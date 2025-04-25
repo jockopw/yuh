@@ -278,7 +278,7 @@ local UniversalAimbotandESPTab = Window:CreateTab("Universal Aimbot and ESP", ni
 local UniversalAimbotandESPSection = UniversalAimbotandESPTab:CreateSection("Note: Not Tested in All Games")
 
 local Button = UniversalAimbotandESPTab:CreateButton({
-   Name = "Aimbot and ESP (Not fully functional)",
+   Name = "(Aimbot and ESP (Not fully functional)",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ttwizz/Open-Aimbot/refs/heads/master/source.lua'))()
    end,
