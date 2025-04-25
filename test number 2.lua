@@ -274,6 +274,16 @@ end)
    end,
 })
 
+local UniversalAimbotandESPTab = Window:CreateTab("Universal Aimbot and ESP", nil) -- Title, Image
+local UniversalAimbotandESPSection = UniversalAimbotandESPTab:CreateSection("Note: Not Tested in All Games")
+
+local Button = UniversalAimbotandESPTab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ttwizz/Open-Aimbot/refs/heads/master/source.lua'))()
+   end,
+})
+
 local ChatBypassTab = Window:CreateTab("Chat Bypasses (Use At Your Own Risk)", nil) -- Title, Image
 local ChatBypassSection = ChatBypassTab:CreateSection("Chat Bypasses (Very Bannable)")
 
