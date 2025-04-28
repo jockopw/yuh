@@ -464,3 +464,12 @@ end
    end,
 })
 
+local DoorsTab = Window:CreateTab("Doors", nil) -- Title, Image
+local DoorsSection = DoorsTab:CreateSection("For Doors")
+
+local Button = DoorsTab:CreateButton({
+   Name = "Doors Script #1",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
+   end,
+})
