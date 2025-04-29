@@ -495,3 +495,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-o
    end,
 })
 
+local Button = DoorsTab:CreateButton({
+   Name = "Doors Script #2 (Not Tested)",
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))() 
+   end,
+})
