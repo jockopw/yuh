@@ -413,7 +413,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Keyless-aut
 local Button = DeadRailsTab:CreateButton({
    Name = "General Dead Rails Script",
    Callback = function()
-loadstring(game:HttpGet('https://skullhub.xyz/loader.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua'))()
    end,
 })
 
