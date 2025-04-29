@@ -435,7 +435,7 @@ local ZombieUprisingTab = Window:CreateTab("Zombie Uprising", nil)
 local ZombieUprisingSection = ZombieUprisingTab:CreateSection("For Zombie Uprising")
 
 local Button = ZombieUprisingTab:CreateButton({
-   Name = "Zombie Uprising (Might Not Work On All Guns)",
+   Name = "Zombie Uprising Script #1 (Might Not Work On All Guns)",
    Callback = function()
 --> Gun Mods | Zombie Uprising | By: unauth0rised on discord
 local StarterGui = game:GetService("StarterGui")
@@ -496,6 +496,34 @@ for i,v in next, getsenv(ReplicatedFirst.Framework) do
         end
     end
 end
+   end,
+})
+
+local Button = ZombieUprisingTab:CreateButton({
+   Name = "Zombie Uprising Script #2",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheOnlyGiraffe/AUTHZombies/refs/heads/main/auth1.lua"))()
+   end,
+})
+
+local Button = ZombieUprisingTab:CreateButton({
+   Name = "Zombie Uprising Script #3",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = ZombieUprsingTab:CreateButton({
+   Name = "Zombie Uprising Script #4",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Games/Zombie-Uprising'))() 
+   end,
+})
+
+local Button = ZombieUprisingTab:CreateButton({
+   Name = "Zombie Uprising Script #5",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/dady172172/Roblox-Cheat-Scripts/refs/heads/master/Zombie%20Uprising%20GUI.lua'))()
    end,
 })
 
