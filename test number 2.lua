@@ -501,3 +501,25 @@ local Button = DoorsTab:CreateButton({
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))() 
    end,
 })
+
+local Button = DoorsTab:CreateButton({
+   Name = "Doors Script #3 (Not Tested)",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jockopw/iamnotskidding/refs/heads/main/noskid.lua'))()
+   end,
+})
+
+local Button = DoorsTab:CreateButton({
+   Name = "Doors Script #4 (Not Tested)",
+   Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/9QPGnLx6'),true))()
+   end,
+})
+
+local Button = DoorsTab:CreateButton({
+   Name = "Doors Script #5 (Not Tested)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))() 
+   end,
+})
+	
