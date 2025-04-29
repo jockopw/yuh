@@ -396,6 +396,20 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/Dead-R
    end,
 })
 
+local Button = DeadRailsTab:CreateButton({
+   Name = "Achievement Autofarm (Works Fory Anything)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/newpacifisct/refs/heads/main/newpacifisct.lua"))()
+   end,
+})
+
+local Button = DeadRailsTab:CreateButton({
+   Name = "Autofarm Bonds",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Keyless-auto-bonds/refs/heads/main/obfuscated%20(6).txt'))()
+   end,
+})
+
 local ZombieUprisingTab = Window:CreateTab("Zombie Uprising", nil)
 local ZombieUprisingSection = ZombieUprisingTab:CreateSection("For Zombie Uprising")
 
@@ -473,3 +487,4 @@ local Button = DoorsTab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
    end,
 })
+
