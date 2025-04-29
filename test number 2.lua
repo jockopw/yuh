@@ -397,7 +397,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/Dead-R
 })
 
 local Button = DeadRailsTab:CreateButton({
-   Name = "Achievement Autofarm (Works Fory Anything)",
+   Name = "Achievement Autofarm (Works For Anything)",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/newpacifisct/refs/heads/main/newpacifisct.lua"))()
    end,
@@ -407,6 +407,13 @@ local Button = DeadRailsTab:CreateButton({
    Name = "Autofarm Bonds",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Keyless-auto-bonds/refs/heads/main/obfuscated%20(6).txt'))()
+   end,
+})
+
+local Button = DeadRailsTab:CreateButton({
+   Name = "General Dead Rails Script",
+   Callback = function()
+loadstring(game:HttpGet('https://skullhub.xyz/loader.lua'))()
    end,
 })
 
