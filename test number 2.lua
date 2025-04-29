@@ -369,6 +369,20 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/re
    end,
 })
 
+local Button = MurderMystery2Tab:CreateButton({
+   Name = "Lunar Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
+   end,
+})
+
+local Button = MurderMystery2Tab:CreateButton({
+   Name = "DreadzHub X PL Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DreadzHub2/DreadzHub-Scripts-FR/main/Loader"))()
+   end,
+})
+
 local DressToImpressTab = Window:CreateTab("Dress To Impress", nil) -- Title, Image
 local DressToImpressSection = DressToImpressTab:CreateSection("Dress To Impress")
 
