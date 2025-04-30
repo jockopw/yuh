@@ -500,7 +500,7 @@ end
 })
 
 local Button = ZombieUprisingTab:CreateButton({
-   Name = "Zombie Uprising Script #2",
+   Name = "Zombie Uprising Script #2 (Key System)",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TheOnlyGiraffe/AUTHZombies/refs/heads/main/auth1.lua"))()
    end,
