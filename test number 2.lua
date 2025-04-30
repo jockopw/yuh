@@ -509,7 +509,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TheOnlyGiraffe/AUTHZo
 local Button = ZombieUprisingTab:CreateButton({
    Name = "Zombie Uprising Script #3",
    Callback = function()
-   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jockopw/iamnotskidding/refs/heads/main/noskid.lua'))()
    end,
 })
 
