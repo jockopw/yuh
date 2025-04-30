@@ -547,14 +547,14 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499e
 local Button = DoorsTab:CreateButton({
    Name = "Doors Script #3 (Not Tested)",
    Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/jockopw/iamnotskidding/refs/heads/main/noskid.lua'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Loader.lua"))()'))()
    end,
 })
 
 local Button = DoorsTab:CreateButton({
    Name = "Doors Script #4 (Not Tested)",
    Callback = function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/9QPGnLx6'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/KodbolHub%20%3A%20Doors"))()
    end,
 })
 
