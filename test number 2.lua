@@ -513,7 +513,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/jockopw/iamnotskiddin
    end,
 })
 
-local Button = ZombieUprsingTab:CreateButton({
+local Button = ZombieUprisingTab:CreateButton({
    Name = "Zombie Uprising Script #4",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Unknownproooolucky/Unknown-Hub-X-Universal-Games/main/Games/Zombie-Uprising'))() 
