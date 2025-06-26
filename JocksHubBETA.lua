@@ -411,6 +411,13 @@ loadstring(game:HttpGet("https://getnative.cc/script/loader"))()
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Ringta (buggy but works)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fjruie/RINGTADEADRAILS.github.io/refs/heads/main/UIRAILS.LUA"))()
+   end,
+})
+
 local Button = DeadRailsTab:CreateButton({
    Name = "Dead Rails Anticheat Bypass (VERY IMPORTANT)",
    Callback = function()
