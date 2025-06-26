@@ -352,6 +352,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BeemTZy/Motiona/refs/
    end,
 })
 
+local BedwarsTab = Window:CreateTab("BedWars", nil) -- Title, Image
+local BedwarsSection = BedwarsTab:CreateSection("General Bedwars Scripts")
+
+local Button = BedwarsTab:CreateButton({
+   Name = "Vape V4 (Best Of The Best)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+   end,
+})
+
 local MurderMystery2Tab = Window:CreateTab("Murder Mystery 2", nil) -- Title, Image
 local MurderMystery2Section = MurderMystery2Tab:CreateSection("For MM2! (Buggy)")
 
