@@ -335,6 +335,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ExploitFin/AquaMatrix
    end,
 })
 
+local Button = AnimationsTab:CreateButton({
+   Name = "FE Animations (may be buggy)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gObl00x/My-Scripts/refs/heads/main/Epik%20R6%20Dancezz"))()   
+   end,
+})
+
 local AnimationTab = Window:CreateTab("Animation (R15)", nil) -- Title, Image
 local AnimationSection = AnimationTab:CreateSection("FOR R15")
 
