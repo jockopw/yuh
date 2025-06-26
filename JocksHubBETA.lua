@@ -34,7 +34,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("Universal", nil) -- Title, Image
+local MainTab = Window:CreateTab("🌌Universal🌌", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
 Rayfield:Notify({
@@ -274,7 +274,7 @@ end)
    end,
 })
 
-local UniversalAimbotandESPTab = Window:CreateTab("Universal Aimbot and ESP", nil) -- Title, Image
+local UniversalAimbotandESPTab = Window:CreateTab("🔫Universal Aimbot and ESP🔫", nil) -- Title, Image
 local UniversalAimbotandESPSection = UniversalAimbotandESPTab:CreateSection("Note: Not Tested in All Games")
 
 local Button = UniversalAimbotandESPTab:CreateButton({
@@ -284,7 +284,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ttwizz/Open-Aimbot/re
    end,
 })
 
-local UniversalHitboxExpanderTab = Window:CreateTab("Universal Hitbox Expander", nil) -- Title, Image
+local UniversalHitboxExpanderTab = Window:CreateTab("📦Universal Hitbox Expander📦", nil) -- Title, Image
 local UniversalHitboxExpanderSection = UniversalHitboxExpanderTab:CreateSection("May Not Work In All Games")
 
 local Button = UniversalHitboxExpanderTab:CreateButton({
