@@ -411,7 +411,7 @@ loadstring(game:HttpGet("https://getnative.cc/script/loader"))()
    end,
 })
 
-local Button = Tab:CreateButton({
+local Button = DeadRailsTab:CreateButton({
    Name = "Ringta (buggy but works)",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fjruie/RINGTADEADRAILS.github.io/refs/heads/main/UIRAILS.LUA"))()
