@@ -404,6 +404,14 @@ local DeadRailsTab = Window:CreateTab("Dead Rails", nil) -- Title, Image
 local DeadRailsSection = DeadRailsTab:CreateSection("Dead Rails Scripts!")
 
 local Button = DeadRailsTab:CreateButton({
+   Name = "Native Hub (Needs Key)",
+   Callback = function()
+script_key="PASTE KEY HERE";
+loadstring(game:HttpGet("https://getnative.cc/script/loader"))()
+   end,
+})
+
+local Button = DeadRailsTab:CreateButton({
    Name = "Dead Rails Anticheat Bypass (VERY IMPORTANT)",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AmareScripts/DeadRails/refs/heads/main/Bypass%25AntiCheat.lua"))()
