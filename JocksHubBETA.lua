@@ -294,7 +294,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/ma
    end,
 })
 
-local ChatBypassTab = Window:CreateTab("Chat Bypasses (Use At Your Own Risk)", nil) -- Title, Image
+local ChatBypassTab = Window:CreateTab("💬Chat Bypasses (Use At Your Own Risk)💬", nil) -- Title, Image
 local ChatBypassSection = ChatBypassTab:CreateSection("Chat Bypasses (Very Bannable)")
 
 local Button = ChatBypassTab:CreateButton({
@@ -325,7 +325,7 @@ local Button = ChatBypassTab:CreateButton({
    end,
 })
 
-local AnimationsTab = Window:CreateTab("Animations (R6)", nil) -- Title, Image
+local AnimationsTab = Window:CreateTab("💃Animations (R6)💃", nil) -- Title, Image
 local AnimationsSection = AnimationsTab:CreateSection("FOR R6")
 
 local Button = AnimationsTab:CreateButton({
@@ -342,7 +342,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/gObl00x/My-Scripts/re
    end,
 })
 
-local AnimationTab = Window:CreateTab("Animation (R15)", nil) -- Title, Image
+local AnimationTab = Window:CreateTab("🕺Animation (R15)🕺", nil) -- Title, Image
 local AnimationSection = AnimationTab:CreateSection("FOR R15")
 
 local Button = AnimationTab:CreateButton({
@@ -352,7 +352,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BeemTZy/Motiona/refs/
    end,
 })
 
-local BedwarsTab = Window:CreateTab("BedWars", nil) -- Title, Image
+local BedwarsTab = Window:CreateTab("🛏BedWars🛏", nil) -- Title, Image
 local BedwarsSection = BedwarsTab:CreateSection("General Bedwars Scripts")
 
 local Button = BedwarsTab:CreateButton({
@@ -362,7 +362,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4Fo
    end,
 })
 
-local BrookhavenTab = Window:CreateTab("Brookhaven", nil) -- Title, Image
+local BrookhavenTab = Window:CreateTab("🏡Brookhaven🏡", nil) -- Title, Image
 local BrookhavenSection = BrookhavenTab:CreateSection("General Brookhaven Scripts")
 
 local Button = BrookhavenTab:CreateButton({
@@ -580,7 +580,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/realgengar/Brookhaven
    end,
 })
 
-local MurderMystery2Tab = Window:CreateTab("Murder Mystery 2", nil) -- Title, Image
+local MurderMystery2Tab = Window:CreateTab("🗡Murder Mystery 2🗡", nil) -- Title, Image
 local MurderMystery2Section = MurderMystery2Tab:CreateSection("For MM2! (Buggy)")
 
 local Button = MurderMystery2Tab:CreateButton({
@@ -618,7 +618,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DreadzHub2/DreadzHub-
    end,
 })
 
-local DressToImpressTab = Window:CreateTab("Dress To Impress", nil) -- Title, Image
+local DressToImpressTab = Window:CreateTab("👗Dress To Impress👗", nil) -- Title, Image
 local DressToImpressSection = DressToImpressTab:CreateSection("Dress To Impress")
 
 local Button = DressToImpressTab:CreateButton({
@@ -628,7 +628,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/
    end,
 })
 
-local DeadRailsTab = Window:CreateTab("Dead Rails", nil) -- Title, Image
+local DeadRailsTab = Window:CreateTab("☠️Dead Rails☠️", nil) -- Title, Image
 local DeadRailsSection = DeadRailsTab:CreateSection("Dead Rails Scripts!")
 
 local Button = DeadRailsTab:CreateButton({
@@ -681,7 +681,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ZusumeHub/ZusumeHub/r
    end,
 })
 
-local ZombieUprisingTab = Window:CreateTab("Zombie Uprising", nil)
+local ZombieUprisingTab = Window:CreateTab("🧟‍♂️Zombie Uprising🧟‍♂️", nil)
 local ZombieUprisingSection = ZombieUprisingTab:CreateSection("For Zombie Uprising")
 
 local Button = ZombieUprisingTab:CreateButton({
@@ -777,7 +777,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/dady172172/Roblox-Che
    end,
 })
 
-local DoorsTab = Window:CreateTab("Doors", nil) -- Title, Image
+local DoorsTab = Window:CreateTab("🚪Doors🚪", nil) -- Title, Image
 local DoorsSection = DoorsTab:CreateSection("For Doors")
 
 local Button = DoorsTab:CreateButton({
