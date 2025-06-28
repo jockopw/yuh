@@ -297,6 +297,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/ma
 local ChatBypassTab = Window:CreateTab("💬Chat Bypasses (Use At Your Own Risk)💬", nil) -- Title, Image
 local ChatBypassSection = ChatBypassTab:CreateSection("Chat Bypasses (Very Bannable)")
 
+local Paragraph = ChatBypassTab:CreateParagraph({Title = "‼️DISCLAIMER‼‼️", Content = "THESE TWO SCRIPTS ARE VERY VERY BUGGY AND COULD GET YOU BANNED USE AT YOUR OWN RISK"})
+
 local Button = ChatBypassTab:CreateButton({
    Name = "Cat Bypass",
    Callback = function()
@@ -308,20 +310,6 @@ local Button = ChatBypassTab:CreateButton({
    Name = "Anna Bypasser",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua",true))()
-   end,
-})
-
-local Button = ChatBypassTab:CreateButton({
-   Name = "Cat Bypass Notes- Closes UI and is buggy",
-   Callback = function()
-        print ("sorry :(")
-   end,
-})
-
-local Button = ChatBypassTab:CreateButton({
-   Name = "Anna Bypasser Notes-This Script dosent work on all games and is bannable",
-   Callback = function()
-        print ("sorry abt the bug tho")
    end,
 })
 
